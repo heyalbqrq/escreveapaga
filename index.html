@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt" >
+<head>
+  
+  <!-- Da série de coisas curiosas do ALBQRQ
+            http://twitter.com/heyalbqrq 👾 -->
+  
+  <meta charset="UTF-8">
+  <title>escreve/apaga - seu bloco de notas pessoal 🗒️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/228/spiral-note-pad_1f5d2.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/228/spiral-note-pad_1f5d2.png" sizes="16x16" />
+  
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148370224-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148370224-1');
+</script>
+<!-- Fim - Script Google Analytics -->
+  
+  </head>
+  
+    <!-- Hey u!
+
+▒▒▒▒▒▒▒█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+▒▒▒▒▒▒▒█░▒▒▒▒▒▒▒▓▒▒▓▒▒▒▒▒▒▒░█
+▒▒▒▒▒▒▒█░▒▒▓▒▒▒▒▒▒▒▒▒▄▄▒▓▒▒░█░▄▄
+▒▒▄▀▀▄▄█░▒▒▒▒▒▒▓▒▒▒▒█░░▀▄▄▄▄▄▀░░█
+▒▒█░░░░█░▒▒▒▒▒▒▒▒▒▒▒█░░░░░░░░░░░█
+▒▒▒▀▀▄▄█░▒▒▒▒▓▒▒▒▓▒█░░░█▒░░░░█▒░░█
+▒▒▒▒▒▒▒█░▒▓▒▒▒▒▓▒▒▒█░░░░░░░▀░░░░░█
+▒▒▒▒▒▄▄█░▒▒▒▓▒▒▒▒▒▒▒█░░█▄▄█▄▄█░░█
+▒▒▒▒█░░░█▄▄▄▄▄▄▄▄▄▄█░█▄▄▄▄▄▄▄▄▄█
+▒▒▒▒█▄▄█░░█▄▄█░░░░░░█▄▄█░░█▄▄█
+  -->
+  
+   <!-- Código Saver // Início-->
+   <script type="text/javascript" src="FileSaver.js"></script>
+   
+  <!-- função ao clicar em salvar -->
+   <script>
+   function salvar() {
+      let texto = document.getElementById("texto").value;
+      let titulo = document.getElementById("titulo").value;
+      var blob = new Blob([texto], { type: "text/plain;charset=utf-8" });
+      saveAs(blob, titulo + ".txt");
+   }
+   </script>
+   <!-- Código Saver // Final -->
+
+  <!-- Mais do que um experimento p/ ser divertido, 
+  o #escreve/apaga também é uma ferramenta para aqueles momentos de necessidade,
+  afinal, ninguém merece esperar o word abrir, não é? -->
+
+  <!-- Corpo // Início-->
+  <body>
+  <!-- Salvando config <p class="pad">#</p> -->
+  
+  <!-- Título // Início-->
+  <label for="input-fileName"></label><br/>
+  <input type="text" id="titulo" placeholder="comece pelo título ☕">
+  <!-- Título // Final-->
+    
+  <!-- Texto // Início-->
+  <div>
+  <textarea id="texto" class="notepad" placeholder="este é um espaço simples pra vc rascunhar e fazer anotações rápidas 📋 pode começar a digitar 🤗" ></textarea>
+  </div>
+  <!-- Texto // Final-->
+
+  
+  <!-- Script // Botão Salvar-->
+  <center>
+  <script  src="script.js"></script>
+  <button id="btn" onclick="salvar()">clique aqui p/ salvar 💾</button>
+  </center>
+  
+  <!-- Radapé -->
+  <div class="footer">
+  <p style="text-align:center">
+    
+  <!-- Hitcounter -->
+  <img src="http://hitwebcounter.com/counter/counter.php?page=7134157&style=0007&nbdigits=5&type=page&initCount=0" title="." alt="."   border="0" >
+  <br>
+    
+  <!-- Eu aqui👾 -->
+  <a href="https://heyalbqrq.com">❤️</a></p></div>
+ 
+    
+  
+  <!-- Corpo // Final-->
+</body>
+</html>
