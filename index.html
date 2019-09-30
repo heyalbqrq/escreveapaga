@@ -107,7 +107,26 @@
     🎵🎤🎧🎷📱🔌🎥📷📺🔎💡🔦📕📚💰💵
     </center>
 </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js">   </script>
+    <script>$(function () {
+
+$('.showButton').click(function () {
+
+$('.hidden').show();
+
+$('.show').hide();
+
+});
+
+$('.hideButton').click(function () {
+
+$('.hidden').hide();
+
+$('.show').show();
+
+});
+
+      });</script>
     
   <center><button onclick="myFunction()">Emoji Rain 👇</button></center>
   <div id="emojis" class="hidden">
