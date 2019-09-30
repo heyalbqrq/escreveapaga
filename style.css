@@ -95,6 +95,7 @@ transition: all 0.3s ease 0s;
 
 .footer {
   margin-bottom: 30px; 
+  font-size: 12px ;
 }
 
 .hidden {
