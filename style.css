@@ -97,9 +97,6 @@ transition: all 0.3s ease 0s;
   margin-bottom: 30px; 
 }
 
-.hidden {
-     display:none;
-}
 
 button {
   font-size: 12px ;
