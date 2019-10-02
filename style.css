@@ -103,12 +103,12 @@ display:none;
 }
 
 button {
-  font-size: 12px ;
+  font-size: 145px ;
   background-color: Transparent;
   background-repeat:no-repeat;
   border: none;
   width: 30%;
-  padding: 10px 0;
+  padding: 0px 0;
   text-align: center;
-  margin-top: 10px;
+  margin-top:  0px;
 }
