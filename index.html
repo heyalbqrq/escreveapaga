@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt" >
-<head>
-  
-  <!-- Da série de coisas curiosas do ALBQRQ
+<html lang="pt">
+  <head>
+    <!-- Da série de coisas curiosas do ALBQRQ
             http://twitter.com/heyalbqrq 👾 -->
-  
-  <meta charset="UTF-8">
-  <title>escreve/apaga - seu bloco de notas pessoal 🗒️</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./style.css">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/228/spiral-note-pad_1f5d2.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/228/spiral-note-pad_1f5d2.png" sizes="16x16" />
-  
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148370224-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-148370224-1');
-</script>
-<!-- Fim - Script Google Analytics! -->
-  
+    <meta charset="UTF-8" />
+    <title>escreve/apaga - seu bloco de notas pessoal 🗒️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <!--link rel="stylesheet" href="./script.js" /-->
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/228/spiral-note-pad_1f5d2.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/228/spiral-note-pad_1f5d2.png"
+      sizes="16x16"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-148370224-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-148370224-1");
+    </script>
+    <!-- Fim - Script Google Analytics! -->
+    
   </head>
-  
-    <!-- Hey u!
+
+  <!-- Hey u!
 
 ▒▒▒▒▒▒▒█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
 ▒▒▒▒▒▒▒█░▒▒▒▒▒▒▒▓▒▒▓▒▒▒▒▒▒▒░█
@@ -40,20 +55,20 @@
 ▒▒▒▒█░░░█▄▄▄▄▄▄▄▄▄▄█░█▄▄▄▄▄▄▄▄▄█
 ▒▒▒▒█▄▄█░░█▄▄█░░░░░░█▄▄█░░█▄▄█
   -->
-  
-   <!-- Código Saver // Início-->
-   <script type="text/javascript" src="FileSaver.js"></script>
-   
+
+  <!-- Código Saver // Início-->
+  <script type="text/javascript" src="FileSaver.js"></script>
+
   <!-- função ao clicar em salvar -->
-   <script>
-   function salvar() {
-      let texto = document.getElementById("texto").value;
+  <script>
+    function salvar() {
+      let texto = document.getElementById("notepad").value;
       let titulo = document.getElementById("titulo").value;
       var blob = new Blob([texto], { type: "text/plain;charset=utf-8" });
       saveAs(blob, titulo + ".txt");
-   }
-   </script>
-   <!-- Código Saver // Final -->
+    }
+  </script>
+  <!-- Código Saver // Final -->
 
   <!-- Mais do que um experimento p/ ser divertido, 
   o #escreve/apaga também é uma ferramenta para aqueles momentos de necessidade,
@@ -61,68 +76,95 @@
 
   <!-- Corpo // Início-->
   <body>
-  <!-- Salvando config <p class="pad">#</p> -->
-  
-  <!-- Título // Início-->
-  <label for="input-fileName"></label><br/>
-  <input type="text" id="titulo" placeholder="comece pelo título ☕">
-  <!-- Título // Final-->
-    
-  <!-- Texto // Início-->
-  <div>
-  <textarea id="texto" class="notepad" placeholder="este é um espaço simples pra vc rascunhar e fazer anotações rápidas 📋 pode começar a digitar 🤗" ></textarea>
-  </div>
-  <!-- Texto // Final-->
+    <!-- Título // Início-->
+    <input
+      type="text"
+      id="titulo"
+      class="titulo"
+      placeholder="comece pelo título ☕"
+      title="só pra ficar mais cool qndo salvar 😎"
+    />
+    <!-- Título // Final-->
 
-        <!-- Emoji Rain -->
-     <center>
-    <button class="showButton show">Emoji Rain 👇</button>
-    <button class="hideButton hidden">Copie, cole e esconda 👆</button>
-       <div class="hidden">
-         <center>😘😗😄😝👻🙈🙉🙊👶👦👧👾🤖💩
-           🙆💁👼👫👬👭💃🛀🏄🚴💪💏✌👍👊
-           🙏👅👄💋💞💥💦💨👙👑💍💎🐼🐰🐘
-           🐬🐟🌻🍟🍕🎂🍰🍫🍬🍭☕🍷🍸🍹🍺🍻
-           🌏🌋🗼🗽⛺🌃🌆🌉🚗🚚⛽🚢🚀🚽🌛
-           🌚🌟🌞🌂☔⛄🔥⚡🎆🎇✨🎈🎉🎊🎋🎍
-           🎏🎀🎁🏆⚽🏀🏈🎲🎮🎱📢🔊🔇🔔🔕
-           🎵🎤🎧🎷📱🔌🎥📷📺🔎💡🔦📕📚💰💵</center></div>
-  <!-- Script // Botão Salvar-->
-  <center>
-  <script  src="script.js"></script>
-  <button id="btn" onclick="salvar()">clique aqui p/ salvar 💾</button>
-  </center>
- 
-  <!-- Rodapé -->
-  <div class="footer">
-  <p style="text-align:center">
-    
-    <!-- Eu aqui👾 -->
-    
-   With ❤️ by  <a href="https://heyalbqrq.com">👾</a></p>
-   <br>
-      <!-- /// -->
-  
-    
-    <!-- Script .btn -->
-       <script src="https://code.jquery.com/jquery-3.2.1.min.js">   </script>
-       <!-- Script React -->
-       <script>$(function () {
-$('.showButton').click(function () {
-$('.hidden').show();
-$('.show').hide();
-});
-$('.hideButton').click(function () {
-$('.hidden').hide();
-$('.show').show();
-});
-});
-       </script>
-       <!-- Fecha React -->
-       </div>
+    <!-- Texto // Início-->
+    <div>
+      <!-- Seems like you got the ID and CLASS wrong -->
+      <textarea
+        input="texto"
+        id="notepad"
+        class="notepad"
+        placeholder="este é um espaço simples pra vc rascunhar e fazer anotações rápidas 📋 pode começar a digitar 🤗"
+        title="pode ficar susse, se vc fechar a página sem querer ou precisar sair rapidinho, guardo tudinho aqui até vc voltar 🤗"
+      ></textarea>
     </div>
-    
-  
-  <!-- Corpo // Final-->
-</body>
+    <!-- Texto // Final-->
+
+    <!-- Emoji Rain -->
+    <center>
+      <button class="showButton show" title="supresa! clica clica clica 😎">
+        Emoji Rain 👇
+      </button>
+      <button class="hideButton hidden">Copie, cole e esconda 👆</button>
+      <div class="hidden">
+        <center>
+          😘😗😄😝👻🙈🙉🙊👶👦👧👾🤖💩 🙆💁👼👫👬👭💃🛀🏄🚴💪💏✌👍👊
+          🙏👅👄💋💞💥💦💨👙👑💍💎🐼🐰🐘 🐬🐟🌻🍟🍕🎂🍰🍫🍬🍭☕🍷🍸🍹🍺🍻
+          🌏🌋🗼🗽⛺🌃🌆🌉🚗🚚⛽🚢🚀🚽🌛 🌚🌟🌞🌂☔⛄🔥⚡🎆🎇✨🎈🎉🎊🎋🎍
+          🎏🎀🎁🏆⚽🏀🏈🎲🎮🎱📢🔊🔇🔔🔕 🎵🎤🎧🎷📱🔌🎥📷📺🔎💡🔦📕📚💰💵
+        </center>
+      </div>
+      <!-- Script // Botão Salvar-->
+      <center>
+        <button
+          id="btn"
+          onclick="salvar()"
+          title="chegamos aqui juntos agr me guarde com carinho 💖"
+        >
+          clique aqui p/ salvar 💾
+        </button>
+      </center>
+
+      <center>
+        <input
+          type="button"
+          value="Reset 👻"
+          id="reset"
+          title="cuidado p/ não me apagar sem querer 😱"
+        />
+      </center>
+
+      <!-- Rodapé -->
+      <div class="footer">
+        <p style="text-align:center">
+          <!-- Eu aqui👾 -->
+
+          With ❤️ by <a href="https://heyalbqrq.com" title="wash aqui!">👾</a>
+        </p>
+        <br />
+        <!-- /// -->
+
+        <!-- Script .btn -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- Script React -->
+        <script>
+          $(function() {
+            $(".showButton").click(function() {
+              $(".hidden").show();
+              $(".show").hide();
+            });
+            $(".hideButton").click(function() {
+              $(".hidden").hide();
+              $(".show").show();
+            });
+          });
+        </script>
+      </div>
+      <!-- Fecha React -->
+
+      <!-- Now the script is loading -->
+      <script src="./autosave.js"></script>
+
+      <!-- Corpo // Final-->
+    </center>
+  </body>
 </html>
