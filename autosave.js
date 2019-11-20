@@ -1,6 +1,3 @@
-// When i refresh, the content on "titulo" (title) become the same on "notepad" ...
-// I need help keeping their content different when updating
-
 var editingArea = document.getElementById("notepad");
 
 var KEY = "storageKey";
