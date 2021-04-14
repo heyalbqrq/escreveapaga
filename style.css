@@ -39,6 +39,7 @@ body {
   padding: 0px;
   border: 0px;
   margin-bottom: 20px;
+  box-shadow:   1px 1px 1px 1px rgba(68, 68, 68, 0.1);
 }
 
 /* ----- Botão -----*/
@@ -103,6 +104,7 @@ button:hover {
   height: calc(80vh - 6rem);
   appearance: none;
   border: none;
+  box-shadow:   1px 1px 1px 1px rgba(68, 68, 68, 0.1);
   outline: none;
   color: inherit;
   background: transparent;
@@ -130,3 +132,4 @@ button {
   text-align: center;
   margin-top: 3px;
 }
+
