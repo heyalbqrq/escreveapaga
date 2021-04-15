@@ -1,5 +1,3 @@
-/* ----- Viva o minimalismo 💖 -----*/
-
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
 /* ----- #LatoLovers! -----*/
@@ -26,16 +24,16 @@ body {
   font-family: "Lato";
   max-width: 50rem;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem;
   padding-bottom: 0;
 }
 
 /* ----- Título -----*/
 
 .header {
-  font-family: "Charter";
+  font-family: "Lato";
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 #titulo {
@@ -45,10 +43,10 @@ body {
   padding: 0px;
   border: 0px;
   margin-bottom: 20px;
-  box-shadow: 0.3px 0.3px 0.3px 0.3px rgba(68, 68, 68, 0.1);
+  box-shadow: 0.2px 0.2px 0.2px 0.3px rgba(68, 68, 68, 0.1);
 }
 
-/* ----- Botão -----*/
+/* ----- Botões -----*/
 
 #btn {
   font-size: 14px;
@@ -56,6 +54,18 @@ body {
   border: none;
   background: none;
   margin-bottom: 20px;
+  box-shadow: 0.2px 0.2px 0.2px 0.3px rgba(68, 68, 68, 0.1);
+}
+
+#btn:hover {
+  color: #222 !important;
+  font-weight: 800 !important;
+  letter-spacing: 0px;
+  background: none;
+  -webkit-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease 0s;
+  box-shadow: 1px 1px 1px 1px rgba(68, 68, 68, 0.1);
 }
 
 #reset {
@@ -64,6 +74,7 @@ body {
   border: none;
   background: none;
   margin-bottom: 20px;
+  box-shadow: 0.2px 0.2px 0.2px 0.3px rgba(68, 68, 68, 0.1);
 }
 
 #reset:hover {
@@ -74,6 +85,19 @@ body {
   -webkit-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.3s ease 0s;
+  box-shadow: 1px 1px 1px 1px rgba(68, 68, 68, 0.1);
+}
+
+button {
+  font-size: 14px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  width: 30%;
+  padding: 3px 0;
+  text-align: center;
+  margin-top: 3px;
+  box-shadow: 0.2px 0.2px 0.2px 0.3px rgba(68, 68, 68, 0.1);
 }
 
 button:hover {
@@ -84,6 +108,7 @@ button:hover {
   -webkit-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.3s ease 0s;
+  box-shadow: 1px 1px 1px 1px rgba(68, 68, 68, 0.1);
 }
 
 /* ----- Título Config-----*/
@@ -110,7 +135,7 @@ button:hover {
   height: calc(80vh - 6rem);
   appearance: none;
   border: none;
-  box-shadow: 0.3px 0.3px 0.3px 0.3px rgba(68, 68, 68, 0.1);
+  box-shadow: 0.2px 0.2px 0.2px 0.3px rgba(68, 68, 68, 0.1);
   outline: none;
   color: inherit;
   background: transparent;
@@ -128,13 +153,4 @@ button:hover {
   display: none;
 }
 
-button {
-  font-size: 14px;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  width: 30%;
-  padding: 3px 0;
-  text-align: center;
-  margin-top: 3px;
-}
+ 
