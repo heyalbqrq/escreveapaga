@@ -2,7 +2,7 @@ escreve/apaga 🗒️
 =================
 ## Um bloco de notas descomplicado, pois ninguém merece esperar o Word abrir, não é?
           
-Agora com download do conteúdo em arquivo .txt 👾
+Agora com download do conteúdo em arquivo .txt e auto save 👾
 
 ## Notas
 - filesaver por [Eligrey](http://purl.eligrey.com/github/FileSaver.js)
