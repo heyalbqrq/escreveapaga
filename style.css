@@ -15,13 +15,13 @@
 
 html {
   font: 100%/1.68 var(--font);
-  background-color: #fff;
-  color: #222;
+  background-color: #ffffff;
+  color: #222222;
   transition: 0.2s ease;
 }
 
 body {
-  font-family: "Lato";
+  font-family: var(--font);
   max-width: 50rem;
   margin: 0 auto;
   padding: 2rem;
@@ -31,19 +31,20 @@ body {
 /* ----- Título -----*/
 
 .header {
-  font-family: "Lato";
-  font-size: 14px;
+  font-family: var(--font);
+  font-size: 16px;
   opacity: 0.7;
 }
 
 #titulo {
   display: inline;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
   padding: 0px;
-  border: 0px;
+  border: none;
   margin-bottom: 20px;
   box-shadow: 0.2px 0.2px 0.2px 0.3px rgba(68, 68, 68, 0.1);
+  
 }
 
 /* ----- Botões -----*/
@@ -54,18 +55,18 @@ body {
   border: none;
   background: none;
   margin-bottom: 20px;
-  box-shadow: 0.2px 0.2px 0.2px 0.3px rgba(68, 68, 68, 0.1);
+  box-shadow: 2px 2px 0px 0px rgba(68, 68, 68, 0.2);
 }
 
 #btn:hover {
-  color: #222 !important;
+  color: #222222 !important;
   font-weight: 800 !important;
   letter-spacing: 0px;
   background: none;
   -webkit-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.3s ease 0s;
-  box-shadow: 1px 1px 1px 1px rgba(68, 68, 68, 0.1);
+  box-shadow: 3px 3px 3px 3px rgba(68, 68, 68, 0.1);
 }
 
 #reset {
@@ -74,18 +75,18 @@ body {
   border: none;
   background: none;
   margin-bottom: 20px;
-  box-shadow: 0.2px 0.2px 0.2px 0.3px rgba(68, 68, 68, 0.1);
+  box-shadow: 2px 2px 0px 0px rgba(68, 68, 68, 0.2);
 }
 
 #reset:hover {
-  color: #222 !important;
+  color: #222222 !important;
   font-weight: 800 !important;
   letter-spacing: 0px;
   background: none;
   -webkit-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.3s ease 0s;
-  box-shadow: 1px 1px 1px 1px rgba(68, 68, 68, 0.1);
+  box-shadow: 3px 3px 3px 3px rgba(68, 68, 68, 0.1);
 }
 
 button {
@@ -97,18 +98,18 @@ button {
   padding: 3px 0;
   text-align: center;
   margin-top: 3px;
-  box-shadow: 0.2px 0.2px 0.2px 0.3px rgba(68, 68, 68, 0.1);
+  box-shadow: 2px 2px 0px 0px rgba(68, 68, 68, 0.2);
 }
 
 button:hover {
-  color: #222 !important;
+  color: #222222 !important;
   font-weight: 800 !important;
   letter-spacing: 0px;
   background: none;
   -webkit-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 10px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.3s ease 0s;
-  box-shadow: 1px 1px 1px 1px rgba(68, 68, 68, 0.1);
+  box-shadow: 3px 3px 3px 3px rgba(68, 68, 68, 0.1);
 }
 
 /* ----- Título Config-----*/
@@ -126,7 +127,7 @@ button:hover {
 /* ----- Corpo Config -----*/
 
 .notepad {
-  font-family: "Lato";
+  font-family: var(--font);
   display: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -154,3 +155,32 @@ button:hover {
 }
 
  
+/* ----- Dark Mode -----*/
+.dark-mode {
+  background-color: #191919;
+  color: white;
+}
+
+.dark-mode a {
+  color: #ecb365;
+}
+.dark-mode hr {
+  background-color: #eeeeee;
+}
+
+.switch {
+  position: absolute;
+  margin: auto;
+  top: 10px;
+  right: 0px;
+  width: 150px;
+  text-align: center;
+}
+.inner-switch {
+  position: absolute;
+  border: 2px solid #555555;
+  border-radius: 1.25rem;
+  width: 3.125rem;
+  text-align: center;
+}
+/* Dark Mode End */
