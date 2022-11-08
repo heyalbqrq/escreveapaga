@@ -7,7 +7,17 @@
     <meta charset="UTF-8" />
     <title>escreve/apaga - seu bloco de notas descomplicado 🗒️</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Folha de Estilos -->
+    <link
+      rel="stylesheet"
+      href="/style.css"
+      type="text/css"
+      media="screen, projection"
+    />
+
+    <!-- Arquivos Javascript -->
+    <script src="/script.js" defer></script>
     <!--link rel="stylesheet" href="./script.js" /-->
 
     <!-- Favicon -->
@@ -86,17 +96,18 @@
   <body>
     <div class="header">
       <center>
-         Esse é o escreveapa.ga. Seu bloco de notas descomplicado 🗒️. 
+        Esse é o escreveapa.ga. Seu bloco de notas descomplicado 🗒️.
       </center>
     </div>
     <br />
+
     <!-- Título // Início-->
     <input
       type="text"
       id="titulo"
       class="titulo"
       placeholder="comece pelo título ☕"
-      title="só pra ficar mais cool qndo salvar 😎"
+      title="só pra ficar mais cool quando salvar 😎"
     />
     <!-- Título // Final-->
 
@@ -107,8 +118,7 @@
         input="texto"
         id="notepad"
         class="notepad"
-        placeholder="este é um espaço simples pra vc rascunhar e fazer anotações rápidas 📋 pode começar a digitar e pode não se preocupe, se vc fechar a página sem querer ou precisar sair rapidinho, guardo tudinho aqui até vc voltar 🤗"
-        title="seu bloco de notas descomplicado 🗒️"
+        placeholder="este é um espaço simples pra vc rascunhar e fazer anotações rápidas 📋 pode começar a digitar e pode não se preocupe, se você fechar a página sem querer ou precisar sair rapidinho, guardo tudinho aqui até você voltar 🤗"
       ></textarea>
     </div>
     <!-- Texto // Final-->
@@ -121,7 +131,7 @@
       <button class="hideButton hidden">Copie, cole e esconda 👆</button>
       <div class="hidden">
         <center>
-           😘😄😢😝👻🙈🙉🙊👶👦👧👾🤖💩 🙆💁👼🛀🏄🚴💪💏✌👍👊
+          😘😄😢😝👻🙈🙉🙊👶👦👧👾🤖💩 🙆💁👼🛀🏄🚴💪💏✌👍👊
           🙏👅💖💋💥💦💨👙👑💎🐼🐰🐘 🐬🌻🍕🍰🍫🍬🍭☕🍸🍻
           🌏🌋🗼🗽⛺🌃🌆🌉🚗🚚⛽🚢🚀🚽🌛 🌚🌟🌞🌂☔⛄🔥⚡🎆🎇✨🎈🎉🎊🎋🎍
           🎏🎀🎁🏆⚽🏀🏈🎲🎮🎱📢🔊🔇🔔🔕 🎵🎤🎧🎷📱🔌🎥📷📺🔎💡🔦📕📚💰💵 🍇 🍈
@@ -133,30 +143,30 @@
         <button
           id="btn"
           onclick="salvar()"
-          title="chegamos aqui juntos agr me guarde com carinho 💖"
+          title="chegamos aqui juntos agora me guarde com carinho 💖"
         >
           clique aqui p/ salvar 💾
         </button>
       </center>
 
-      <center>
+      <!-- <center>
         <input
           type="button"
-          value="Reset 👻"
+          value=" Reset 👻 "
           id="reset"
-          title="cuidado p/ não me apagar sem querer 😱"
+          title="cuidado pra não me apagar sem querer! 😱"
         />
-      </center>
+      </center> -->
 
       <!-- Rodapé -->
       <div class="footer">
-        <p style="text-align:center">
+        <p style="text-align: center">
           <!-- Eu aqui👾 -->
 
           With ❤️ by
           <a href="https://heyalbqrq.glitch.me" title="wash aqui!">👾</a><br />
-          <a href="https://instagram.com/heyalbqrq">Instagram</a> |
-          <a href="https://github.com/heyalbqrq/escreveapaga">GitHub</a> | <a href="https://forms.gle/BQ7W6Jo1HkjKsREk7"> Deixe seu feedback ❗</a>
+          <a href="https://twitter.com/heyalbqrq">Twitter</a> |
+          <a href="https://github.com/heyalbqrq/escreveapaga">GitHub</a> |  <a href="https://forms.gle/BQ7W6Jo1HkjKsREk7">Deixe seu feedback❗</a>
         </p>
 
         <br />
@@ -167,12 +177,12 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <!-- Script React -->
         <script>
-          $(function() {
-            $(".showButton").click(function() {
+          $(function () {
+            $(".showButton").click(function () {
               $(".hidden").show();
               $(".show").hide();
             });
-            $(".hideButton").click(function() {
+            $(".hideButton").click(function () {
               $(".hidden").hide();
               $(".show").show();
             });
