@@ -15,4 +15,5 @@ Started on [Glitch](https://glitch.com/) and shaped around 💖
 -------------------
 ## Log
 14/12/22 - Adição de Contador de Caracteres (.js)
+
 10/12/22 - Aumento da opacidade das sombras dos quadros
