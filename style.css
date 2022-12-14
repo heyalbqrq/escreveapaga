@@ -36,6 +36,13 @@ body {
   padding-bottom: 0;
 }
 
+
+byline {
+  font-family: var(--font);
+  font-size: 12px;
+  color: var(--grey);
+}
+
 /* ----- Título -----*/
 
 .header {
