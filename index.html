@@ -117,13 +117,16 @@
 
     <!-- Texto // Início-->
     <div>
-      <!-- Seems like you got the ID and CLASS wrong -->
       <textarea
         input="texto"
         id="notepad"
+        onkeyup="charcountupdate(this.value)"
         class="notepad"
         placeholder="este é um espaço simples pra vc rascunhar e fazer anotações rápidas 📋 pode começar a digitar e pode não se preocupe, se você fechar a página sem querer ou precisar sair rapidinho, guardo tudinho aqui até você voltar 🤗"
       ></textarea>
+
+      <!-- Contador de Caracteres -->
+      <byline> <span id="charcount"></span></byline>
     </div>
     <!-- Texto // Final-->
 
@@ -196,10 +199,4 @@
       </div>
       <!-- Fecha React -->
 
-      <!-- Now the script is loading -->
-      <script src="./autosave.js"></script>
-
-      <!-- Corpo // Final-->
-    </center>
-  </body>
-</html>
+      <!-- Now the 
